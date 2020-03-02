@@ -8,11 +8,11 @@
   <hr />
 
 <?php
-  require_once('appvars.php');
-  require_once('connectvars.php');
+  require_once('includes/appvars.php');
+  require_once('includes/conn.php');
 
   // Connect to the database
-  $dbc = mysqli_connect(localhost, msizer, wLFpzlUI, msizer);
+  $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
   // Retrieve the score data from MySQL
   $query = "SELECT * FROM guitar ORDER BY score DESC, date ASC";
