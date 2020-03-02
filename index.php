@@ -2,6 +2,7 @@
 
 <body>
 <div class="container">
+  <?php include("includes/nav.php"); ?>
   <h2>Guitar Wars - High Scores</h2>
   <p>Welcome, Guitar Warrior, do you have what it takes to crack the high score list? If so, just <a href="addscore.php">add your own score</a>.</p>
   <hr />
@@ -11,10 +12,10 @@
   require_once('connectvars.php');
 
   // Connect to the database
-  $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+  $dbc = mysqli_connect(localhost, msizer, wLFpzlUI, msizer);
 
   // Retrieve the score data from MySQL
-  $query = "SELECT * FROM guitarwars ORDER BY score DESC, date ASC";
+  $query = "SELECT * FROM guitar ORDER BY score DESC, date ASC";
   $data = mysqli_query($dbc, $query);
 
   // Loop through the array of score data, formatting it as HTML
