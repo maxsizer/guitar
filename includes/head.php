@@ -4,5 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Guitar Wars - High Scores</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
